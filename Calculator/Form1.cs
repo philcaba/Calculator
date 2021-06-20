@@ -19,8 +19,13 @@ namespace Calculator
 
         private void btn_Click(object sender, EventArgs e)
         {
+            if (txtBx1.Text == "0")
+                txtBx1.Clear();
+
             Button b = (Button)sender;
             txtBx1.Text = txtBx1.Text + b.Text;
         }
+
+
     }
 }

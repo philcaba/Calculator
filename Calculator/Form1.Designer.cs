@@ -198,6 +198,7 @@ namespace Calculator
             this.btnDecimal.TabIndex = 13;
             this.btnDecimal.Text = ".";
             this.btnDecimal.UseVisualStyleBackColor = true;
+            this.btnDecimal.Click += new System.EventHandler(this.btn_Click);
             // 
             // btnAdd
             // 
@@ -248,6 +249,7 @@ namespace Calculator
             this.txtBx1.Size = new System.Drawing.Size(249, 35);
             this.txtBx1.TabIndex = 18;
             this.txtBx1.Text = "0";
+            
             // 
             // Form1
             // 
