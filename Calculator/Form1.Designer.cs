@@ -59,6 +59,7 @@ namespace Calculator
             this.btn7.TabIndex = 0;
             this.btn7.Text = "7";
             this.btn7.UseVisualStyleBackColor = true;
+            this.btn7.Click += new System.EventHandler(this.btn_Click);
             // 
             // btn8
             // 
@@ -69,6 +70,7 @@ namespace Calculator
             this.btn8.TabIndex = 1;
             this.btn8.Text = "8";
             this.btn8.UseVisualStyleBackColor = true;
+            this.btn8.Click += new System.EventHandler(this.btn_Click);
             // 
             // btn9
             // 
@@ -79,6 +81,7 @@ namespace Calculator
             this.btn9.TabIndex = 2;
             this.btn9.Text = "9";
             this.btn9.UseVisualStyleBackColor = true;
+            this.btn9.Click += new System.EventHandler(this.btn_Click);
             // 
             // btnDivide
             // 
@@ -99,6 +102,7 @@ namespace Calculator
             this.btn4.TabIndex = 4;
             this.btn4.Text = "4";
             this.btn4.UseVisualStyleBackColor = true;
+            this.btn4.Click += new System.EventHandler(this.btn_Click);
             // 
             // btn5
             // 
@@ -109,6 +113,7 @@ namespace Calculator
             this.btn5.TabIndex = 5;
             this.btn5.Text = "5";
             this.btn5.UseVisualStyleBackColor = true;
+            this.btn5.Click += new System.EventHandler(this.btn_Click);
             // 
             // btn6
             // 
@@ -119,6 +124,7 @@ namespace Calculator
             this.btn6.TabIndex = 6;
             this.btn6.Text = "6";
             this.btn6.UseVisualStyleBackColor = true;
+            this.btn6.Click += new System.EventHandler(this.btn_Click);
             // 
             // btnMultiply
             // 
@@ -150,6 +156,7 @@ namespace Calculator
             this.btn2.TabIndex = 9;
             this.btn2.Text = "2";
             this.btn2.UseVisualStyleBackColor = true;
+            this.btn2.Click += new System.EventHandler(this.btn_Click);
             // 
             // btn3
             // 
@@ -160,6 +167,7 @@ namespace Calculator
             this.btn3.TabIndex = 10;
             this.btn3.Text = "3";
             this.btn3.UseVisualStyleBackColor = true;
+            this.btn3.Click += new System.EventHandler(this.btn_Click);
             // 
             // btnSubtract
             // 
