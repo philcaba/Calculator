@@ -17,5 +17,10 @@ namespace Calculator
             InitializeComponent();
         }
 
+        private void btn_Click(object sender, EventArgs e)
+        {
+            Button b = (Button)sender;
+            txtBx1.Text = txtBx1.Text + b.Text;
+        }
     }
 }

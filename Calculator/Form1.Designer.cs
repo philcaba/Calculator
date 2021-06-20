@@ -44,10 +44,10 @@ namespace Calculator
             this.btn0 = new System.Windows.Forms.Button();
             this.btnDecimal = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
-            this.button16 = new System.Windows.Forms.Button();
-            this.button17 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnEqual = new System.Windows.Forms.Button();
+            this.btnClear = new System.Windows.Forms.Button();
+            this.btnClearEntry = new System.Windows.Forms.Button();
+            this.txtBx1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btn7
@@ -139,6 +139,7 @@ namespace Calculator
             this.btn1.TabIndex = 8;
             this.btn1.Text = "1";
             this.btn1.UseVisualStyleBackColor = true;
+            this.btn1.Click += new System.EventHandler(this.btn_Click);
             // 
             // btn2
             // 
@@ -200,55 +201,55 @@ namespace Calculator
             this.btnAdd.Text = "+";
             this.btnAdd.UseVisualStyleBackColor = true;
             // 
-            // button15
+            // btnEqual
             // 
-            this.button15.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button15.Location = new System.Drawing.Point(216, 157);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(45, 96);
-            this.button15.TabIndex = 15;
-            this.button15.Text = "=";
-            this.button15.UseVisualStyleBackColor = true;
+            this.btnEqual.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnEqual.Location = new System.Drawing.Point(216, 157);
+            this.btnEqual.Name = "btnEqual";
+            this.btnEqual.Size = new System.Drawing.Size(45, 96);
+            this.btnEqual.TabIndex = 15;
+            this.btnEqual.Text = "=";
+            this.btnEqual.UseVisualStyleBackColor = true;
             // 
-            // button16
+            // btnClear
             // 
-            this.button16.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button16.Location = new System.Drawing.Point(216, 106);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(45, 45);
-            this.button16.TabIndex = 16;
-            this.button16.Text = "C";
-            this.button16.UseVisualStyleBackColor = true;
+            this.btnClear.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnClear.Location = new System.Drawing.Point(216, 106);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(45, 45);
+            this.btnClear.TabIndex = 16;
+            this.btnClear.Text = "C";
+            this.btnClear.UseVisualStyleBackColor = true;
             // 
-            // button17
+            // btnClearEntry
             // 
-            this.button17.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button17.Location = new System.Drawing.Point(216, 55);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(45, 45);
-            this.button17.TabIndex = 17;
-            this.button17.Text = "CE";
-            this.button17.UseVisualStyleBackColor = true;
+            this.btnClearEntry.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnClearEntry.Location = new System.Drawing.Point(216, 55);
+            this.btnClearEntry.Name = "btnClearEntry";
+            this.btnClearEntry.Size = new System.Drawing.Size(45, 45);
+            this.btnClearEntry.TabIndex = 17;
+            this.btnClearEntry.Text = "CE";
+            this.btnClearEntry.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // txtBx1
             // 
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(12, 12);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.textBox1.Size = new System.Drawing.Size(249, 35);
-            this.textBox1.TabIndex = 18;
-            this.textBox1.Text = "0";
+            this.txtBx1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtBx1.Location = new System.Drawing.Point(12, 12);
+            this.txtBx1.Name = "txtBx1";
+            this.txtBx1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtBx1.Size = new System.Drawing.Size(249, 35);
+            this.txtBx1.TabIndex = 18;
+            this.txtBx1.Text = "0";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(270, 261);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button17);
-            this.Controls.Add(this.button16);
-            this.Controls.Add(this.button15);
+            this.Controls.Add(this.txtBx1);
+            this.Controls.Add(this.btnClearEntry);
+            this.Controls.Add(this.btnClear);
+            this.Controls.Add(this.btnEqual);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.btnDecimal);
             this.Controls.Add(this.btn0);
@@ -293,10 +294,10 @@ namespace Calculator
         private System.Windows.Forms.Button btn0;
         private System.Windows.Forms.Button btnDecimal;
         private System.Windows.Forms.Button btnAdd;
-        private System.Windows.Forms.Button button15;
-        private System.Windows.Forms.Button button16;
-        private System.Windows.Forms.Button button17;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btnEqual;
+        private System.Windows.Forms.Button btnClear;
+        private System.Windows.Forms.Button btnClearEntry;
+        private System.Windows.Forms.TextBox txtBx1;
     }
 }
 
