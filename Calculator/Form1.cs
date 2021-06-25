@@ -12,6 +12,9 @@ namespace Calculator
 {
     public partial class Form1 : Form
     {
+        Double value = 0;
+        String operation = "";
+
         public Form1()
         {
             InitializeComponent();
@@ -29,6 +32,13 @@ namespace Calculator
         private void btnClearEntry_Click(object sender, EventArgs e)
         {
             txtBx1.Text = "0";
+        }
+
+        private void operation_button(object sender, EventArgs e)
+        {
+            Button b = (Button)sender;
+            operation = b.Text;
+            value = double.Parse(txtBx1.Text);
         }
     }
 }
