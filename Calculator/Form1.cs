@@ -47,5 +47,11 @@ namespace Calculator
         {
 
         }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            txtBx1.Clear();
+            value = 0;
+        }
     }
 }
