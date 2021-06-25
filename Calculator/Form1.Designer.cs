@@ -239,6 +239,7 @@ namespace Calculator
             this.btnClearEntry.TabIndex = 17;
             this.btnClearEntry.Text = "CE";
             this.btnClearEntry.UseVisualStyleBackColor = true;
+            this.btnClearEntry.Click += new System.EventHandler(this.btnClearEntry_Click);
             // 
             // txtBx1
             // 
@@ -249,7 +250,6 @@ namespace Calculator
             this.txtBx1.Size = new System.Drawing.Size(249, 35);
             this.txtBx1.TabIndex = 18;
             this.txtBx1.Text = "0";
-            
             // 
             // Form1
             // 

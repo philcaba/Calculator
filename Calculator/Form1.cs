@@ -26,6 +26,9 @@ namespace Calculator
             txtBx1.Text = txtBx1.Text + b.Text;
         }
 
-
+        private void btnClearEntry_Click(object sender, EventArgs e)
+        {
+            txtBx1.Text = "0";
+        }
     }
 }
