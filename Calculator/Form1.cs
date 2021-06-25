@@ -14,6 +14,7 @@ namespace Calculator
     {
         Double value = 0;
         String operation = "";
+        bool operation_continue = false;
 
         public Form1()
         {
@@ -22,7 +23,7 @@ namespace Calculator
 
         private void btn_Click(object sender, EventArgs e)
         {
-            if (txtBx1.Text == "0")
+            if ((txtBx1.Text == "0") || (operation_continue))
                 txtBx1.Clear();
 
             Button b = (Button)sender;
@@ -39,6 +40,12 @@ namespace Calculator
             Button b = (Button)sender;
             operation = b.Text;
             value = double.Parse(txtBx1.Text);
+            operation_continue = true;
+        }
+
+        private void btnEqual_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
