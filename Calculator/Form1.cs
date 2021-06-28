@@ -28,6 +28,12 @@ namespace Calculator
 
             operation_continue = false;
             Button b = (Button)sender;
+            if (b.Text == ".")
+            {
+                if (!txtBx1.Text.Contains("."))
+                    txtBx1.Text = txtBx1.Text + b.Text;
+            }
+            else
             txtBx1.Text = txtBx1.Text + b.Text;
         }
 
@@ -54,7 +60,7 @@ namespace Calculator
                 case "-":
                     txtBx1.Text = (value - double.Parse(txtBx1.Text)).ToString();
                     break;
-                case "*":
+                case "X":
                     txtBx1.Text = (value * double.Parse(txtBx1.Text)).ToString();
                     break;
                 case "/":
