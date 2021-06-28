@@ -134,7 +134,7 @@ namespace Calculator
             this.btnMultiply.Name = "btnMultiply";
             this.btnMultiply.Size = new System.Drawing.Size(45, 45);
             this.btnMultiply.TabIndex = 7;
-            this.btnMultiply.Text = "X";
+            this.btnMultiply.Text = "*";
             this.btnMultiply.UseVisualStyleBackColor = true;
             this.btnMultiply.Click += new System.EventHandler(this.operation_button);
             // 

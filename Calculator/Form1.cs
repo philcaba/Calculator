@@ -26,6 +26,7 @@ namespace Calculator
             if ((txtBx1.Text == "0") || (operation_continue))
                 txtBx1.Clear();
 
+            operation_continue = false;
             Button b = (Button)sender;
             txtBx1.Text = txtBx1.Text + b.Text;
         }
@@ -45,6 +46,23 @@ namespace Calculator
 
         private void btnEqual_Click(object sender, EventArgs e)
         {
+            switch (operation)
+            {
+                case "+":
+                    txtBx1.Text = (value + double.Parse(txtBx1.Text)).ToString();
+                    break;
+                case "-":
+                    txtBx1.Text = (value - double.Parse(txtBx1.Text)).ToString();
+                    break;
+                case "*":
+                    txtBx1.Text = (value * double.Parse(txtBx1.Text)).ToString();
+                    break;
+                case "/":
+                    txtBx1.Text = (value / double.Parse(txtBx1.Text)).ToString();
+                    break;
+            }
+            
+
 
         }
 
