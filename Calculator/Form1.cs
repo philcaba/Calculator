@@ -62,7 +62,7 @@ namespace Calculator
                 case "-":
                     txtBx1.Text = (value - double.Parse(txtBx1.Text)).ToString();
                     break;
-                case "X":
+                case "x":
                     txtBx1.Text = (value * double.Parse(txtBx1.Text)).ToString();
                     break;
                 case "/":
