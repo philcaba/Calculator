@@ -296,6 +296,8 @@ namespace Calculator
             this.Controls.Add(this.btn7);
             this.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(286, 300);
+            this.MinimumSize = new System.Drawing.Size(286, 300);
             this.Name = "Form1";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.ShowIcon = false;
