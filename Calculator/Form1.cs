@@ -45,10 +45,18 @@ namespace Calculator
         private void operation_button(object sender, EventArgs e)
         {
             Button b = (Button)sender;
-            operation = b.Text;
-            value = double.Parse(txtBx1.Text);
-            operation_continue = true;
-            lbl1.Text = value + "" + operation;
+            if (value != 0)
+            {
+                btnEqual.PerformClick();
+
+            }
+            else
+            {
+                operation = b.Text;
+                value = double.Parse(txtBx1.Text);
+                operation_continue = true;
+                lbl1.Text = value + "" + operation;
+            }
         }
 
         private void btnEqual_Click(object sender, EventArgs e)
