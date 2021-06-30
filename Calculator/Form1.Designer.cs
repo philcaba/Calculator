@@ -48,6 +48,7 @@ namespace Calculator
             this.btnClear = new System.Windows.Forms.Button();
             this.btnClearEntry = new System.Windows.Forms.Button();
             this.txtBx1 = new System.Windows.Forms.TextBox();
+            this.lbl1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btn7
@@ -257,11 +258,23 @@ namespace Calculator
             this.txtBx1.TabIndex = 18;
             this.txtBx1.Text = "0";
             // 
+            // lbl1
+            // 
+            this.lbl1.AutoSize = true;
+            this.lbl1.BackColor = System.Drawing.SystemColors.Window;
+            this.lbl1.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbl1.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            this.lbl1.Location = new System.Drawing.Point(13, 13);
+            this.lbl1.Name = "lbl1";
+            this.lbl1.Size = new System.Drawing.Size(0, 23);
+            this.lbl1.TabIndex = 19;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(270, 261);
+            this.Controls.Add(this.lbl1);
             this.Controls.Add(this.txtBx1);
             this.Controls.Add(this.btnClearEntry);
             this.Controls.Add(this.btnClear);
@@ -314,6 +327,7 @@ namespace Calculator
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnClearEntry;
         private System.Windows.Forms.TextBox txtBx1;
+        private System.Windows.Forms.Label lbl1;
     }
 }
 

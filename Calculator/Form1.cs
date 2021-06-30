@@ -48,10 +48,12 @@ namespace Calculator
             operation = b.Text;
             value = double.Parse(txtBx1.Text);
             operation_continue = true;
+            lbl1.Text = value + "" + operation;
         }
 
         private void btnEqual_Click(object sender, EventArgs e)
         {
+            lbl1.Text = "";
             switch (operation)
             {
                 case "+":
