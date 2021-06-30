@@ -79,5 +79,10 @@ namespace Calculator
             txtBx1.Clear();
             value = 0;
         }
+
+        private void Form1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+        }
     }
 }
